@@ -11,12 +11,17 @@ public class Pangram {
 	{
 		Scanner scan = new Scanner(System.in);
 		String input = scan.nextLine();
-				
+		//  If input string size is less than 26
+		char arr[] = input.toCharArray();
+		if(arr.length<26){
+			System.out.println("not pangram");
+		} else{
 		boolean result = isPangram(input);
 		if(result)
 			System.out.println("pangram");
 		else
 			System.out.println("not pangram");
+		}
 	}
 	private static boolean isPangram(String input)
 	{
