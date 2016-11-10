@@ -23,9 +23,9 @@ public class Pangram {
 			System.out.println("not pangram");
 		}
 	}
-	private static boolean isPangram(String input)
+	private static boolean isPangram(char arr[])
 	{
-		char arr[] = input.toCharArray();
+		//char arr[] = input.toCharArray();
 		HashSet<Character> set = new HashSet<Character>();
 		for(int i=0; i<arr.length;i++)
 		{
